@@ -2,7 +2,9 @@
   "name": "@barksh/cli",
   "version": "1.0.0",
   "description": ":bamboo: CLI implement for bark core",
-  "main": "dist/index.js",
+  "bin": {
+    "bark": "bin/bark"
+  },
   "directories": {
     "doc": "docs"
   },
@@ -23,9 +25,10 @@
   },
   "homepage": "https://github.com/barksh/Bark-CLI#readme",
   "dependencies": {
-    "@barksh/core": "^0.0.1"
+    "@barksh/core": "^0.0.1",
+    "commander": "^2.19.0"
   },
   "devDependencies": {
-    "@sudoo/triforce": "^1.5.0" 
+    "@sudoo/triforce": "^1.5.0"
   }
 }

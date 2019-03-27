@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+const bark = require('../app/index.js').default;
+bark(process.argv);

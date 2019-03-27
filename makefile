@@ -9,11 +9,7 @@ mocha := node_modules/.bin/mocha
 
 .IGNORE: clean-linux
 
-main: run
-
-run: 
-	@echo "[INFO] Running through ts-node"
-	@NODE_ENV=development $(ts_node) example/example.ts
+main: dev
 
 dev:
 	@echo "[INFO] Building for development"
@@ -58,3 +54,7 @@ clean-linux:
 publish: install tests license build
 	@echo "[INFO] Publishing package"
 	@cd app && npm publish --access=public
+
+link:
+	@echo "[INFO] Linking executable"
+	@npm link --no-shrinkwrap
