@@ -1,0 +1,28 @@
+{
+  "name": "@barksh/cli",
+  "version": "1.0.0",
+  "description": ":bamboo: CLI implement for bark core",
+  "main": "dist/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barksh/Bark-CLI.git"
+  },
+  "keywords": [
+    "barksh"
+  ],
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barksh/Bark-CLI/issues"
+  },
+  "homepage": "https://github.com/barksh/Bark-CLI#readme",
+  "devDependencies": {
+    "livescript": "^1.6.0"
+  }
+}
