@@ -17,6 +17,9 @@ lib-cov
 # Build
 app
 
+# Bark
+test_barksh
+
 # Coverage directory used by tools like istanbul
 coverage
 
