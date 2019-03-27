@@ -22,7 +22,11 @@
     "url": "https://github.com/barksh/Bark-CLI/issues"
   },
   "homepage": "https://github.com/barksh/Bark-CLI#readme",
+  "dependencies": {
+    "@barksh/core": "^0.0.1"
+  },
   "devDependencies": {
+    "@sudoo/triforce": "^1.5.0",
     "livescript": "^1.6.0"
   }
 }
