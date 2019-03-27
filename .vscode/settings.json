@@ -2,6 +2,10 @@
     "cSpell.words": [
         "barksh",
         "livescript",
-        "sudoo"
-    ]
+        "sudoo",
+        "tshook"
+    ],
+    "tslint.configFile": "typescript/tslint.json",
+    "javascript.preferences.importModuleSpecifier": "auto",
+    "typescript.preferences.importModuleSpecifier": "auto"
 }

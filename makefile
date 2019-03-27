@@ -3,7 +3,8 @@ build := typescript/tsconfig.build.json
 dev := typescript/tsconfig.dev.json
 
 # NPX functions
-lsc := node_modules/.bin/lsc
+tsc := node_modules/.bin/tsc
+ts_node := node_modules/.bin/ts-node
 mocha := node_modules/.bin/mocha
 
 .IGNORE: clean-linux
@@ -12,7 +13,7 @@ main: run
 
 run: 
 	@echo "[INFO] Running through ts-node"
-	@BARKSH_LOCALLY_TEST=true $(ts_node) example/example.ts
+	@NODE_ENV=development $(ts_node) example/example.ts
 
 dev:
 	@echo "[INFO] Building for development"
