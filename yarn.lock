@@ -16,6 +16,14 @@
   resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.1.0.tgz#0e061a7736eb90891fc732c89bb328aa40eadfc8"
   integrity sha512-2JfmCgbc8IQRiKeCeCIlnZHlRzvZVUe5Arj2TDM5tfvhTL+XbEFv/14Fschgm2Oc0O72JTCULtmYTirdrPO6ew==
 
+"@sudoo/coco@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@sudoo/coco/-/coco-0.0.1.tgz#741a39518012786bbcd88564d827d40b631e67d5"
+  integrity sha512-Rp9tjBu9ZscW/c7TKAwYqEPP3YRG5TxMpDZqCtwu27HJWxsBeQngmtthW6nYbD9bHQmb/VOOGUqHbyBXAldqAA==
+  dependencies:
+    "@sudoo/bark" "^2.1.0"
+    connor "^2.0.0"
+
 "@sudoo/triforce@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@sudoo/triforce/-/triforce-1.5.0.tgz#128b9177d2ff4ad0ce19e05bffc9fc408eee0bcd"
@@ -188,7 +196,7 @@ commander@2.15.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
   integrity sha512-VlfT9F3V0v+jr4yxPc5gg9s62/fIVWsd2Bk2iD435um1NlGMYdVCq+MjcXnhYq2icNOizHr1kK+5TI6H0Hy0ag==
 
-commander@^2.12.1, commander@^2.19.0:
+commander@^2.12.1:
   version "2.19.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
   integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
