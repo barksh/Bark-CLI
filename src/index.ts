@@ -5,20 +5,20 @@
  */
 
 import { Environment } from "@barksh/core";
-import { Argument, Coco, Command, Option } from "@sudoo/coco";
+import { Coco } from "@sudoo/coco";
+import { createInitCommand } from "./command/init";
 import { getEnvironment } from "./environment";
 
-export const BarkCli = (args: string[]) => {
+export const BarkCli = async (args: string[]): Promise<void> => {
 
     const env: Environment = getEnvironment();
     const coco: Coco = Coco.create();
 
-    coco.command(Command.create('test')
-        .argument(Argument.create('hello'))
-        .option(Option.create('a').setName('name'))
-        .then((inputs) => console.log(inputs)));
+    coco.command(createInitCommand(env));
 
-    coco.go(args);
+    await coco.go(args);
+
+    console.log('done');
 };
 
 export default BarkCli;
