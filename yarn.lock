@@ -16,13 +16,13 @@
   resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.1.0.tgz#0e061a7736eb90891fc732c89bb328aa40eadfc8"
   integrity sha512-2JfmCgbc8IQRiKeCeCIlnZHlRzvZVUe5Arj2TDM5tfvhTL+XbEFv/14Fschgm2Oc0O72JTCULtmYTirdrPO6ew==
 
-"@sudoo/coco@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@sudoo/coco/-/coco-0.0.1.tgz#741a39518012786bbcd88564d827d40b631e67d5"
-  integrity sha512-Rp9tjBu9ZscW/c7TKAwYqEPP3YRG5TxMpDZqCtwu27HJWxsBeQngmtthW6nYbD9bHQmb/VOOGUqHbyBXAldqAA==
+"@sudoo/coco@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@sudoo/coco/-/coco-0.0.2.tgz#a157bceb182ae16f4a7078d854f2d6a6ea096b6a"
+  integrity sha512-ZEYI54VQ7dAqy55pi5MbmL2Hf5vp9ujf5SpSzkqFTEtaC5M4gpCOLE6jUeIf8yCnDUQ6fotZ3OiGVns/lUIwXw==
   dependencies:
     "@sudoo/bark" "^2.1.0"
-    connor "^2.0.0"
+    connor "^2.4.0"
 
 "@sudoo/triforce@^1.5.0":
   version "1.5.0"
