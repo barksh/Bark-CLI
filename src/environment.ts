@@ -4,7 +4,7 @@
  * @description Environment
  */
 
-import { getOrInitConfig } from "@barksh/config";
+import { getOrInitConfigWithDefaultFileName } from "@barksh/config";
 import { BarkConfig, Environment } from "@barksh/core";
 import * as Path from "path";
 
@@ -16,7 +16,7 @@ export const getDefaultConfig = (): BarkConfig => ({
 
 export const getConfigFile = async (): Promise<BarkConfig> => {
 
-    const config: BarkConfig = await getOrInitConfig(getDefaultConfig());
+    const config: BarkConfig = await getOrInitConfigWithDefaultFileName(getDefaultConfig());
 
     return config;
 };
