@@ -4,7 +4,7 @@
  * @description Environment
  */
 
-import { getOrInitConfigWithDefaultFileName } from "@barksh/config";
+import { Config } from "@barksh/config";
 import { BarkConfig, Environment } from "@barksh/core";
 import * as Path from "path";
 
@@ -14,20 +14,14 @@ export const getDefaultConfig = (): BarkConfig => ({
     sources: [],
 });
 
-export const getConfigFile = async (): Promise<BarkConfig> => {
-
-    const config: BarkConfig = await getOrInitConfigWithDefaultFileName(getDefaultConfig());
-
-    return config;
-};
-
 export const getEnvironment = async (): Promise<Environment> => {
 
     const appDataPath = Path.resolve('./test_barksh');
+    const config: Config = Config.withDefaultPath();
 
     const env: Environment = Environment
         .create()
-        .setConfig(await getConfigFile())
+        .setConfig(await config.getOrInit(getDefaultConfig()))
         .setPackagePath(Path.join(appDataPath, 'package'))
         .setTemporaryPath(Path.join(appDataPath, 'temp'));
 
