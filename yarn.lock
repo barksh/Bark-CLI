@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@barksh/config@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@barksh/config/-/config-0.0.1.tgz#e4a95bd07ad6c463fb7f03b0f7781437b313ceb5"
+  integrity sha512-Metn8NK3vweX37MBG97WzTw60cn2EKFl3zIf1m/ij0xxTG8GoC8NGoqni2aMMgIg32/9lI5w05pZ9Com0s5h2g==
+  dependencies:
+    "@sudoo/bark" "^2.3.0"
+    "@sudoo/io" "^0.0.1"
+    connor "^2.4.0"
+
 "@barksh/core@^0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@barksh/core/-/core-0.0.3.tgz#d95f4d30f84ecaa4f91085fbdad96d4df04b5a0c"
@@ -16,6 +25,11 @@
   resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.1.0.tgz#0e061a7736eb90891fc732c89bb328aa40eadfc8"
   integrity sha512-2JfmCgbc8IQRiKeCeCIlnZHlRzvZVUe5Arj2TDM5tfvhTL+XbEFv/14Fschgm2Oc0O72JTCULtmYTirdrPO6ew==
 
+"@sudoo/bark@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.3.0.tgz#6ff12367bfe26fd042809aa3d7d5ccd97776e1c6"
+  integrity sha512-ODnh0R8h3UAILnLHBMRDOApUwUXTkE7PaRjtscd+0GyUHbHHuXW3WSu7KueLVpQ2yMxFH/8y3FcbYwfurxLQeA==
+
 "@sudoo/coco@^0.0.2":
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/@sudoo/coco/-/coco-0.0.2.tgz#a157bceb182ae16f4a7078d854f2d6a6ea096b6a"
@@ -23,6 +37,11 @@
   dependencies:
     "@sudoo/bark" "^2.1.0"
     connor "^2.4.0"
+
+"@sudoo/io@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.0.1.tgz#a1e953f0e94b11659214152ab24604af661f78fe"
+  integrity sha512-Kl1txNOOzXlpBO/xCHXedb28itWToAC6RpHx9ehHLccBG7aJqpAEEefFtDKMZtngrYYzBsu7UONuHBEgISdH1Q==
 
 "@sudoo/triforce@^1.5.0":
   version "1.5.0"
@@ -206,7 +225,7 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-connor@^2.0.0, connor@^2.4.0:
+connor@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/connor/-/connor-2.4.0.tgz#af25da66e2bc5d9861595b2992ccda2bb4316d73"
   integrity sha512-8Kwp8LEWxJyW/n5ApHAi34WvxblPzOODXMso3OZJE/gpWdK6vRl7MhVy4/ZSCrIjHvWNNOumhbvEM4GocQgdcA==

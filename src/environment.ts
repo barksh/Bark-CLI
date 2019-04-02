@@ -4,31 +4,30 @@
  * @description Environment
  */
 
-import { Environment } from "@barksh/core";
+import { getOrInitConfig } from "@barksh/config";
+import { BarkConfig, Environment } from "@barksh/core";
 import * as Path from "path";
 
-export const getEnvironment = (): Environment => {
+export const getDefaultConfig = (): BarkConfig => ({
+
+    templates: [],
+    sources: [],
+});
+
+export const getConfigFile = async (): Promise<BarkConfig> => {
+
+    const config: BarkConfig = await getOrInitConfig(getDefaultConfig());
+
+    return config;
+};
+
+export const getEnvironment = async (): Promise<Environment> => {
 
     const appDataPath = Path.resolve('./test_barksh');
 
     const env: Environment = Environment
         .create()
-        .setConfig({
-            templates: [],
-            sources: [
-                {
-                    url: 'http://www.mocky.io/v2/5c9a995a3500004c00d0c6f8',
-                    lastUpdate: new Date(),
-                    structure: {
-                        templates: [{
-                            name: 'test',
-                            url: 'github://WMXPY/Ghoti-CLI-templates/master/dist/react-ssr.zip',
-                            version: '1.0.0',
-                        }],
-                    },
-                },
-            ],
-        })
+        .setConfig(await getConfigFile())
         .setPackagePath(Path.join(appDataPath, 'package'))
         .setTemporaryPath(Path.join(appDataPath, 'temp'));
 

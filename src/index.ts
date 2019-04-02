@@ -12,17 +12,22 @@ import { getEnvironment } from "./environment";
 
 export const BarkCli = async (args: string[]): Promise<void> => {
 
-    const env: Environment = getEnvironment();
-    const core: Core = Core.withEnvironment(env);
+    try {
+        const env: Environment = await getEnvironment();
+        console.log(env);
+        const core: Core = Core.withEnvironment(env);
 
-    const coco: Coco = Coco.create();
+        const coco: Coco = Coco.create();
 
-    coco.command(createInitCommand(core));
-    coco.command(createUpdateCommand(core));
+        coco.command(createInitCommand(core));
+        coco.command(createUpdateCommand(core));
 
-    await coco.go(args);
+        await coco.go(args);
 
-    console.log('done');
+        console.log('done');
+    } catch (error) {
+        console.log(error);
+    }
 };
 
 export default BarkCli;
