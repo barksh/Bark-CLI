@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@barksh/config@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@barksh/config/-/config-0.1.0.tgz#7712ac8d6edb8a96b6ff42968af212c23070d272"
-  integrity sha512-gAIvhd0vvIt5GWDpjiAlcY6iU7usx+B2i0matCX+U0OOXDUuG3QDn9gsgSFLGx9jraJDyVEOEK2yI1pxCec8Ew==
+"@barksh/config@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@barksh/config/-/config-0.1.1.tgz#48252d310322b3adc68983e8b48c86c672a53d75"
+  integrity sha512-7YsQ8UKz3Waa9GMmxZdCw9KtqeTPRL0cxxxUyX8+xrhL7vcxlgYZNA/PwRbUWtlonX7pTbIIPG5wRmQhQ5pntQ==
   dependencies:
     "@sudoo/bark" "^2.3.0"
-    "@sudoo/io" "^0.0.1"
+    "@sudoo/io" "^0.1.0"
     connor "^2.4.0"
 
 "@barksh/core@^0.0.3":
@@ -20,12 +20,7 @@
     connor "^2.4.0"
     ejs "^2.6.1"
 
-"@sudoo/bark@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.1.0.tgz#0e061a7736eb90891fc732c89bb328aa40eadfc8"
-  integrity sha512-2JfmCgbc8IQRiKeCeCIlnZHlRzvZVUe5Arj2TDM5tfvhTL+XbEFv/14Fschgm2Oc0O72JTCULtmYTirdrPO6ew==
-
-"@sudoo/bark@^2.3.0":
+"@sudoo/bark@^2.1.0", "@sudoo/bark@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.3.0.tgz#6ff12367bfe26fd042809aa3d7d5ccd97776e1c6"
   integrity sha512-ODnh0R8h3UAILnLHBMRDOApUwUXTkE7PaRjtscd+0GyUHbHHuXW3WSu7KueLVpQ2yMxFH/8y3FcbYwfurxLQeA==
@@ -38,10 +33,10 @@
     "@sudoo/bark" "^2.1.0"
     connor "^2.4.0"
 
-"@sudoo/io@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.0.1.tgz#a1e953f0e94b11659214152ab24604af661f78fe"
-  integrity sha512-Kl1txNOOzXlpBO/xCHXedb28itWToAC6RpHx9ehHLccBG7aJqpAEEefFtDKMZtngrYYzBsu7UONuHBEgISdH1Q==
+"@sudoo/io@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.1.0.tgz#0b11a93f0370fd2787f6637a2098f3edfc55b550"
+  integrity sha512-Qsygvil0KDplj1Obtq3VWvPPM33qGfQuwSYtFyf3hSPw4CH4TU2d+/FaStEmdKGN/MT0qOSQSEKiQD5p89hQqQ==
 
 "@sudoo/triforce@^1.5.0":
   version "1.5.0"
