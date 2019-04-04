@@ -16,14 +16,15 @@ export const getDefaultConfig = (): BarkConfig => ({
 
 export const getEnvironment = async (): Promise<Environment> => {
 
-    const appDataPath = Path.resolve('./test_barksh');
-    const config: Config = Config.withDefaultPath();
+    const config: Config = Config.withDefault();
+
+    console.log(config.path);
 
     const env: Environment = Environment
         .create()
         .setConfig(await config.getOrInit(getDefaultConfig()))
-        .setPackagePath(Path.join(appDataPath, 'package'))
-        .setTemporaryPath(Path.join(appDataPath, 'temp'));
+        .setPackagePath(config.joinPath('package'))
+        .setTemporaryPath(config.joinPath('temp'));
 
     return env;
 };
