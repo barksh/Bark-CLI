@@ -15,5 +15,7 @@ export const createInitCommand = (core: Core): Command => {
 
             console.log(core);
             console.log(inputs);
+
+            console.log(await core.attempt(inputs.template));
         });
 };
