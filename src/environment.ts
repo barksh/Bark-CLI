@@ -6,7 +6,6 @@
 
 import { Config } from "@barksh/config";
 import { BarkConfig, Environment } from "@barksh/core";
-import * as Path from "path";
 
 export const getDefaultConfig = (): BarkConfig => ({
 

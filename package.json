@@ -26,7 +26,7 @@
   "homepage": "https://github.com/barksh/Bark-CLI#readme",
   "dependencies": {
     "@barksh/config": "^0.2.0",
-    "@barksh/core": "^0.0.3",
+    "@barksh/core": "^0.1.0",
     "@sudoo/coco": "^0.0.2"
   },
   "devDependencies": {

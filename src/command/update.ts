@@ -12,6 +12,6 @@ export const createUpdateCommand = (core: Core): Command => {
     return Command.create('update')
         .then(async (inputs: Record<string, string>) => {
 
-            console.log(await core.update());
+            console.log(await core.updateAllSources());
         });
 };

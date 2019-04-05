@@ -22,7 +22,8 @@ export const BarkCli = async (args: string[]): Promise<void> => {
         coco.command(createInitCommand(core));
         coco.command(
             Command.create('source').argument(Argument.create('source')).then(async (inputs: Record<string, string>) => {
-                await core.source(inputs.source);
+                await core.addSource(inputs.source);
+                console.log(env);
             }),
         );
         coco.command(createUpdateCommand(core));

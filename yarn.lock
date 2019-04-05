@@ -11,12 +11,13 @@
     "@sudoo/io" "^0.1.0"
     connor "^2.4.0"
 
-"@barksh/core@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@barksh/core/-/core-0.0.3.tgz#d95f4d30f84ecaa4f91085fbdad96d4df04b5a0c"
-  integrity sha512-EmIep0V/KXiZNnbOc/cb+R50XkX05nJMKOo5449c7076rSoa7LfJvmJReT0ZIFaW5kTykKjeBqx5CPakhbX1Pw==
+"@barksh/core@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@barksh/core/-/core-0.1.0.tgz#c6fc6e9130b099f0001b323f94d01dfe0e1460da"
+  integrity sha512-8m5hHHa40r/yi6femRJDdpNcSnupRdIvQbQLG8goEmN10JAh8/d2Q7Ho/nlRDPJT9dVrs8FG7ESMjZkdoCw1VA==
   dependencies:
-    "@sudoo/bark" "^2.1.0"
+    "@sudoo/bark" "^2.4.1"
+    "@sudoo/io" "^0.1.0"
     connor "^2.4.0"
     ejs "^2.6.1"
 
@@ -24,6 +25,11 @@
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.3.0.tgz#6ff12367bfe26fd042809aa3d7d5ccd97776e1c6"
   integrity sha512-ODnh0R8h3UAILnLHBMRDOApUwUXTkE7PaRjtscd+0GyUHbHHuXW3WSu7KueLVpQ2yMxFH/8y3FcbYwfurxLQeA==
+
+"@sudoo/bark@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.4.1.tgz#a9671a3be0dc2dd7c1ae8ebb85974d4700d2229a"
+  integrity sha512-28C4IgEqIeUWwU+kCKBJJzM02jqDsJ9oimF9/h9t1sPdWhNoJ7Px+LenZXlJY2+o5TA0hTiRZlwIn9oKf33A+Q==
 
 "@sudoo/coco@^0.0.2":
   version "0.0.2"
