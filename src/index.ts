@@ -13,6 +13,7 @@ import { getEnvironment } from "./environment";
 export const BarkCli = async (args: string[]): Promise<void> => {
 
     try {
+
         const env: Environment = await getEnvironment();
         console.log(env);
         const core: Core = Core.withEnvironment(env);

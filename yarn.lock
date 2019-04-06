@@ -44,6 +44,11 @@
   resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.1.0.tgz#0b11a93f0370fd2787f6637a2098f3edfc55b550"
   integrity sha512-Qsygvil0KDplj1Obtq3VWvPPM33qGfQuwSYtFyf3hSPw4CH4TU2d+/FaStEmdKGN/MT0qOSQSEKiQD5p89hQqQ==
 
+"@sudoo/io@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.1.1.tgz#d8676c3abf9a2529faeed7fdf23f4294a79d16f7"
+  integrity sha512-/ajaVUNvxfvyju3nJwOhZHldfh4TAzA64X7aGxGw4cAF0SD7wCguOZ5ONT51fYsN5rdeZq4+4Nw1GzpKmEoAOQ==
+
 "@sudoo/triforce@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@sudoo/triforce/-/triforce-1.5.0.tgz#128b9177d2ff4ad0ce19e05bffc9fc408eee0bcd"

@@ -1,10 +1,12 @@
 {
     "cSpell.words": [
+        "RMRF",
         "barksh",
         "codecov",
         "livescript",
         "shrinkwrap",
         "sudoo",
+        "triforce",
         "tshook"
     ],
     "tslint.configFile": "typescript/tslint.json",
