@@ -6,6 +6,7 @@
 
 import { Core, Environment } from "@barksh/core";
 import { Argument, Coco, Command } from "@sudoo/coco";
+import { CORE_EVENT } from "@sudoo/coco/event/declare";
 import { createInitCommand } from "./command/init";
 import { createUpdateCommand } from "./command/update";
 import { getEnvironment } from "./environment";
@@ -28,10 +29,9 @@ export const BarkCli = async (args: string[]): Promise<void> => {
             }),
         );
         coco.command(createUpdateCommand(core));
+        coco.on(CORE_EVENT.FINISH, () => console.log('done'));
 
         await coco.go(args);
-
-        console.log('done');
     } catch (error) {
         console.log(error);
     }
