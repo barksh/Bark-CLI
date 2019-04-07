@@ -7,6 +7,8 @@
 import { Config } from "@barksh/config";
 import { BarkConfig, Environment } from "@barksh/core";
 
+export const config: Config = Config.withDefault();
+
 export const getDefaultConfig = (): BarkConfig => ({
 
     templates: [],
@@ -15,8 +17,6 @@ export const getDefaultConfig = (): BarkConfig => ({
 
 export const getEnvironment = async (): Promise<Environment> => {
 
-    const config: Config = Config.withDefault();
-
     const env: Environment = Environment
         .create()
         .setConfig(await config.getOrInit(getDefaultConfig()))
@@ -24,4 +24,9 @@ export const getEnvironment = async (): Promise<Environment> => {
         .setTemporaryPath(config.joinPath('temp'));
 
     return env;
+};
+
+export const replaceConfig = async (next: Environment): Promise<void> => {
+
+    await config.replace(next.config);
 };

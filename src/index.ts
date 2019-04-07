@@ -9,7 +9,7 @@ import { Argument, Coco, Command } from "@sudoo/coco";
 import { CORE_EVENT } from "@sudoo/coco/event/declare";
 import { createInitCommand } from "./command/init";
 import { createUpdateCommand } from "./command/update";
-import { getEnvironment } from "./environment";
+import { getEnvironment, replaceConfig } from "./environment";
 
 export const BarkCli = async (args: string[]): Promise<void> => {
 
@@ -23,7 +23,8 @@ export const BarkCli = async (args: string[]): Promise<void> => {
         coco.command(createInitCommand(core));
         coco.command(
             Command.create('source').argument(Argument.create('source')).then(async (inputs: Record<string, string>) => {
-                await core.addSource(inputs.source);
+                const newEnvironment: Environment = await core.addSource(inputs.source);
+                await replaceConfig(newEnvironment);
             }),
         );
         coco.command(createUpdateCommand(core));
