@@ -17,8 +17,6 @@ export const getEnvironment = async (): Promise<Environment> => {
 
     const config: Config = Config.withDefault();
 
-    console.log(config.path);
-
     const env: Environment = Environment
         .create()
         .setConfig(await config.getOrInit(getDefaultConfig()))

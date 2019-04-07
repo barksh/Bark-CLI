@@ -16,7 +16,6 @@ export const BarkCli = async (args: string[]): Promise<void> => {
     try {
 
         const env: Environment = await getEnvironment();
-        console.log(env);
         const core: Core = Core.withEnvironment(env);
 
         const coco: Coco = Coco.create();
@@ -25,7 +24,6 @@ export const BarkCli = async (args: string[]): Promise<void> => {
         coco.command(
             Command.create('source').argument(Argument.create('source')).then(async (inputs: Record<string, string>) => {
                 await core.addSource(inputs.source);
-                console.log(env);
             }),
         );
         coco.command(createUpdateCommand(core));

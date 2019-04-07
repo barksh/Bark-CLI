@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@barksh/config@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@barksh/config/-/config-0.2.0.tgz#80ea11fabfbd58cc1bc84da90ebb56f9924fe273"
-  integrity sha512-Bxb4sSys8Fyls3w8cuDYwujT7SjKMZuTggb6FKGSy9OlmY193REDXF8KPrRgANu8lY13vBdRnDgra1Zd9kqKkQ==
+"@barksh/config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@barksh/config/-/config-1.0.0.tgz#b1d99433ab70bbeeaa80ed746df3782974e4a853"
+  integrity sha512-hvFsTjyaMF5BD4LhaIeMCVd40P2T7CG19OqnnzcKkaNkX9LPN/y1q0E60rw/y1bJlkW8XCbvyQrgT+YGzXJI1A==
   dependencies:
     "@sudoo/bark" "^2.3.0"
     "@sudoo/io" "^0.1.0"
