@@ -21,15 +21,10 @@
     connor "^2.4.0"
     ejs "^2.6.1"
 
-"@sudoo/bark@^2.1.0", "@sudoo/bark@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.3.0.tgz#6ff12367bfe26fd042809aa3d7d5ccd97776e1c6"
-  integrity sha512-ODnh0R8h3UAILnLHBMRDOApUwUXTkE7PaRjtscd+0GyUHbHHuXW3WSu7KueLVpQ2yMxFH/8y3FcbYwfurxLQeA==
-
-"@sudoo/bark@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.4.1.tgz#a9671a3be0dc2dd7c1ae8ebb85974d4700d2229a"
-  integrity sha512-28C4IgEqIeUWwU+kCKBJJzM02jqDsJ9oimF9/h9t1sPdWhNoJ7Px+LenZXlJY2+o5TA0hTiRZlwIn9oKf33A+Q==
+"@sudoo/bark@^2.1.0", "@sudoo/bark@^2.3.0", "@sudoo/bark@^2.4.1", "@sudoo/bark@^2.5.0":
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/@sudoo/bark/-/bark-2.5.1.tgz#b898c0c302a2ccf8cb881a57f15474569b91cf32"
+  integrity sha512-vVkZtwRFbx5jtZzyZI8ZcdDEWYJN3H1Tb/PwzoxpPIf8KkzNftQL4VW+9tVfrNiw/MHyY92HWQDjKsY4WONQGQ==
 
 "@sudoo/coco@^1.0.0":
   version "1.0.0"
@@ -44,10 +39,12 @@
   resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.1.0.tgz#0b11a93f0370fd2787f6637a2098f3edfc55b550"
   integrity sha512-Qsygvil0KDplj1Obtq3VWvPPM33qGfQuwSYtFyf3hSPw4CH4TU2d+/FaStEmdKGN/MT0qOSQSEKiQD5p89hQqQ==
 
-"@sudoo/io@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.1.1.tgz#d8676c3abf9a2529faeed7fdf23f4294a79d16f7"
-  integrity sha512-/ajaVUNvxfvyju3nJwOhZHldfh4TAzA64X7aGxGw4cAF0SD7wCguOZ5ONT51fYsN5rdeZq4+4Nw1GzpKmEoAOQ==
+"@sudoo/io@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-1.2.0.tgz#f0ed4796f4e09c09f28a5ed0e5bdf38f449e6f0a"
+  integrity sha512-3Wm8xQp4WiaAXDo+XjcvjDJVUQsCRiAfgzzmYpTsl/D64xbZDZyKDYur7cv9DZSe0PG3hJR2YcbM4inaJDjmfA==
+  dependencies:
+    "@sudoo/bark" "^2.5.0"
 
 "@sudoo/triforce@^1.5.0":
   version "1.5.0"
