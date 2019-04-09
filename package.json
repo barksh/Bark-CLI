@@ -27,11 +27,16 @@
   "dependencies": {
     "@barksh/config": "^1.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@barksh/core": "^1.0.1",
 =======
     "@barksh/core": "^1.0.0",
 >>>>>>> coco-1.1.0
     "@sudoo/coco": "^1.1.0"
+=======
+    "@barksh/core": "^1.0.1",
+    "@sudoo/coco": "^1.0.0"
+>>>>>>> core-1.0.1
   },
   "devDependencies": {
     "@sudoo/io": "^1.2.0",
