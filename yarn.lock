@@ -39,14 +39,7 @@
   resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.1.1.tgz#d8676c3abf9a2529faeed7fdf23f4294a79d16f7"
   integrity sha512-/ajaVUNvxfvyju3nJwOhZHldfh4TAzA64X7aGxGw4cAF0SD7wCguOZ5ONT51fYsN5rdeZq4+4Nw1GzpKmEoAOQ==
 
-"@sudoo/io@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-1.2.0.tgz#f0ed4796f4e09c09f28a5ed0e5bdf38f449e6f0a"
-  integrity sha512-3Wm8xQp4WiaAXDo+XjcvjDJVUQsCRiAfgzzmYpTsl/D64xbZDZyKDYur7cv9DZSe0PG3hJR2YcbM4inaJDjmfA==
-  dependencies:
-    "@sudoo/bark" "^2.5.0"
-
-"@sudoo/io@^1.2.1":
+"@sudoo/io@^1.2.0", "@sudoo/io@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-1.2.1.tgz#e3d15030fb20c7c5455638c327f21c41997dd524"
   integrity sha512-akpNTulr8Wetieni89VbtQ6b6JjiGdaQ48kLsKgdDITr4BFz9j5Adn2gM+ywIC7Lo/4e8oMnr95ffet92VxiiA==
@@ -91,9 +84,9 @@
   integrity sha512-1axi39YdtBI7z957vdqXI4Ac25e7YihYQtJa+Clnxg1zTJEaIRbndt71O3sP4GAMgiAm0pY26/b9BrY4MR/PMw==
 
 "@types/node@^11.11.3":
-  version "11.13.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.2.tgz#dc85dde46aa8740bb4aed54b8104250f8f849503"
-  integrity sha512-HOtU5KqROKT7qX/itKHuTtt5fV0iXbheQvrgbLNXFJQBY/eh+VS5vmmTAVlo3qIGMsypm0G4N1t2AXjy1ZicaQ==
+  version "11.13.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.4.tgz#f83ec3c3e05b174b7241fadeb6688267fe5b22ca"
+  integrity sha512-+rabAZZ3Yn7tF/XPGHupKIL5EcAbrLxnTr/hgQICxbeuAfWtT0UZSfULE+ndusckBItcv4o6ZeOJplQikVcLvQ==
 
 ansi-regex@^2.0.0:
   version "2.1.1"
@@ -533,9 +526,9 @@ type-detect@^4.0.0, type-detect@^4.0.5:
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
 typescript@^3.3.3333:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.2.tgz#9ed4e6475d906f589200193be056f5913caed481"
-  integrity sha512-Og2Vn6Mk7JAuWA1hQdDQN/Ekm/SchX80VzLhjKN9ETYrIepBFAd8PkOdOTK2nKt0FCkmMZKBJvQ1dV1gIxPu/A==
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.3.tgz#0eb320e4ace9b10eadf5bc6103286b0f8b7c224f"
+  integrity sha512-FFgHdPt4T/duxx6Ndf7hwgMZZjZpB+U0nMNGVCYPq0rEzWKjEDobm4J6yb3CS7naZ0yURFqdw9Gwc7UOh/P9oQ==
 
 wrappy@1:
   version "1.0.2"
