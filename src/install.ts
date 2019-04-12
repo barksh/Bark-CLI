@@ -4,8 +4,9 @@
  * @description Install
  */
 
-import { Core } from "@barksh/core";
+import { Core, Environment } from "@barksh/core";
 import { Argument, Command } from "@sudoo/coco";
+import { replaceConfig } from "./environment";
 
 export const createInstallCommand = (core: Core): Command => {
 
@@ -13,9 +14,9 @@ export const createInstallCommand = (core: Core): Command => {
         .argument(Argument.create('template'))
         .then(async (inputs: Record<string, string>) => {
 
-            console.log(core);
             console.log(inputs);
 
-            console.log(await core.installFromSource(inputs.template));
+            const newEnvironment: Environment = await core.installFromSource(inputs.template);
+            await replaceConfig(newEnvironment);
         });
 };

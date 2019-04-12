@@ -13,7 +13,6 @@ export const createInitCommand = (core: Core): Command => {
         .argument(Argument.create('template'))
         .then(async (inputs: Record<string, string>) => {
 
-            console.log(core);
             console.log(inputs);
 
             console.log(await core.attemptFindTemplate(inputs.template));
