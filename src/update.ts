@@ -14,6 +14,10 @@ export const createUpdateCommand = (core: Core): Command => {
         .argument(Argument.create('name').optional())
         .then(async (inputs: Record<string, string>) => {
 
+            if (inputs.name) {
+                console.log(inputs.name);
+            }
+
             const newEnv: Environment = await core.updateAllSources();
             await replaceConfig(newEnv);
         });
