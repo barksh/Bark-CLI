@@ -5,9 +5,9 @@
  */
 
 import { Core, Environment } from "@barksh/core";
-import { Coco, Command, createInfoCommand } from "@sudoo/coco";
+import { Coco, createInfoCommand } from "@sudoo/coco";
 import { CORE_EVENT } from "@sudoo/coco/event/declare";
-import { getEnvironment } from "./environment";
+import { createPrintCommands, getEnvironment } from "./environment";
 import { createInitCommand } from "./init";
 import { createInstallCommand } from "./install";
 import { createSourceCommand } from "./source";
@@ -22,10 +22,10 @@ export const BarkCli = async (args: string[]): Promise<void> => {
 
         const coco: Coco = Coco.create();
 
+        coco.commands(createPrintCommands(core));
+
         coco.command(createInitCommand(core));
         coco.command(createInstallCommand(core));
-        coco.command(Command.create('s').then(() => console.log(...core.getSources())));
-        coco.command(Command.create('t').then(() => console.log(...core.getTemplates())));
         coco.command(createSourceCommand(core));
         coco.command(createUpdateCommand(core));
         coco.command(createInfoCommand('help', coco, console.log));
@@ -33,6 +33,7 @@ export const BarkCli = async (args: string[]): Promise<void> => {
 
         await coco.go(args);
     } catch (error) {
+
         console.log(error);
     }
 };
