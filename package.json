@@ -27,10 +27,10 @@
   "dependencies": {
     "@barksh/config": "^1.0.0",
     "@barksh/core": "^1.0.4",
-    "@sudoo/coco": "^1.3.2"
+    "@sudoo/coco": "^1.3.3"
   },
   "devDependencies": {
-    "@sudoo/io": "^1.2.0",
+    "@sudoo/io": "^1.2.1",
     "@sudoo/triforce": "^1.5.0"
   }
 }
