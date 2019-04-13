@@ -57,8 +57,8 @@ publish: install tests license build
 
 link:
 	@echo "[INFO] Linking executable"
-	@yarn link --production=false
+	@npm link --no-shrinkwrap
 
 unlink:
 	@echo "[INFO] Linking executable"
-	@yarn unlink --production=false
+	@npm unlink --no-shrinkwrap
