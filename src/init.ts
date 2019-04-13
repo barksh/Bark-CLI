@@ -4,7 +4,7 @@
  * @description Init
  */
 
-import { Core } from "@barksh/core";
+import { Core, Environment, Template } from "@barksh/core";
 import { Argument, Command } from "@sudoo/coco";
 
 export const createInitCommand = (core: Core): Command => {
@@ -19,6 +19,15 @@ export const createInitCommand = (core: Core): Command => {
 
             console.log(inputs.template, inputs.target);
 
-            console.log(await core.attemptFindTemplate(inputs.template));
+            const template: Template | null = await core.attemptFindTemplate(inputs.template);
+
+            if (!template) {
+                throw new Error('template not found');
+            }
+
+            const newEnv: Environment = await core.initTemplate(template, {
+                test: 'test',
+            }, inputs.target);
+            console.log(newEnv);
         });
 };
