@@ -39,10 +39,10 @@
   resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-0.1.1.tgz#d8676c3abf9a2529faeed7fdf23f4294a79d16f7"
   integrity sha512-/ajaVUNvxfvyju3nJwOhZHldfh4TAzA64X7aGxGw4cAF0SD7wCguOZ5ONT51fYsN5rdeZq4+4Nw1GzpKmEoAOQ==
 
-"@sudoo/io@^1.2.1", "@sudoo/io@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-1.3.0.tgz#d94d342aece41f9555374109e048db3075369fa8"
-  integrity sha512-4nJP9gM9rgftQljHG+E1ehxShZN9eTEEqEcXbeUT1CeIUmqcDX+QD/hDoAbvBLCAuew+T0ljEBkufij9ATdwNQ==
+"@sudoo/io@^1.2.1", "@sudoo/io@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@sudoo/io/-/io-1.4.0.tgz#062d90a55a545f195c8a0d06b6633c498533c267"
+  integrity sha512-t1HBkoE7bbCrK3/j0GgQtHxo0cfO4QuHdOiEudg5j4lYwBuvGZCisooEOms6d2wlr/+Yg2hTQOkHYnLWMKiCdA==
   dependencies:
     "@sudoo/bark" "^2.5.1"
 
