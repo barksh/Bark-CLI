@@ -26,11 +26,11 @@
   "homepage": "https://github.com/barksh/Bark-CLI#readme",
   "dependencies": {
     "@barksh/config": "^1.0.0",
-    "@barksh/core": "^1.0.4",
+    "@barksh/core": "^1.0.5",
     "@sudoo/coco": "^1.6.0"
   },
   "devDependencies": {
-    "@sudoo/io": "^1.4.0",
+    "@sudoo/io": "^1.5.0",
     "@sudoo/triforce": "^1.6.0"
   }
 }
