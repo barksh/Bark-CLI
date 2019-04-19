@@ -27,10 +27,10 @@
     "@sudoo/io" "^0.1.0"
     connor "^2.4.0"
 
-"@barksh/core@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@barksh/core/-/core-1.0.5.tgz#337c10df1ba0a557d11b96e1fa7a2b1b4d4d52e6"
-  integrity sha512-EhAo6rlaW1QoStyILauGN0YRh8VOLyUkQeE+VJLpQqDLSoO/IuYtOQOMQahSnHGthhQ3YLl1Dq6wsCAkWHSKGw==
+"@barksh/core@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@barksh/core/-/core-1.0.6.tgz#a1c7264fe22e37ba367b13f05c674517ba1c02a0"
+  integrity sha512-RmOJeJGqCzsgLFQX4qMwjDi8vn+BwkMZ/yT18NGPyVVtcyaYNdtEV9iFjI0aKWoYOeDt25We3ABqUj/yi5szQQ==
   dependencies:
     "@sudoo/bark" "^2.5.1"
     "@sudoo/io" "^1.5.0"
@@ -101,9 +101,9 @@
   integrity sha512-1axi39YdtBI7z957vdqXI4Ac25e7YihYQtJa+Clnxg1zTJEaIRbndt71O3sP4GAMgiAm0pY26/b9BrY4MR/PMw==
 
 "@types/node@^11.13.4":
-  version "11.13.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.4.tgz#f83ec3c3e05b174b7241fadeb6688267fe5b22ca"
-  integrity sha512-+rabAZZ3Yn7tF/XPGHupKIL5EcAbrLxnTr/hgQICxbeuAfWtT0UZSfULE+ndusckBItcv4o6ZeOJplQikVcLvQ==
+  version "11.13.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.5.tgz#266564afa8a6a09dc778dfacc703ed3f09c80516"
+  integrity sha512-/OMMBnjVtDuwX1tg2pkYVSqRIDSmNTnvVvmvP/2xiMAAWf4a5+JozrApCrO4WCAILmXVxfNoQ3E+0HJbNpFVGg==
 
 ansi-styles@^3.2.1:
   version "3.2.1"
@@ -494,9 +494,9 @@ type-detect@^4.0.0, type-detect@^4.0.5:
   integrity sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==
 
 typescript@^3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.3.tgz#0eb320e4ace9b10eadf5bc6103286b0f8b7c224f"
-  integrity sha512-FFgHdPt4T/duxx6Ndf7hwgMZZjZpB+U0nMNGVCYPq0rEzWKjEDobm4J6yb3CS7naZ0yURFqdw9Gwc7UOh/P9oQ==
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.4.tgz#aac4a08abecab8091a75f10842ffa0631818f785"
+  integrity sha512-xt5RsIRCEaf6+j9AyOBgvVuAec0i92rgCaS3S+UVf5Z/vF2Hvtsw08wtUTJqp4djwznoAgjSxeCcU4r+CcDBJA==
 
 wrappy@1:
   version "1.0.2"

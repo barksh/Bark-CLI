@@ -5,7 +5,8 @@
  */
 
 import { Core, Environment, Template } from "@barksh/core";
-import { Argument, Command } from "@sudoo/coco";
+import { keys } from "@sudoo/bark/map";
+import { Argument, Command, Reverse } from "@sudoo/coco";
 
 export const createInitCommand = (core: Core): Command => {
 
@@ -25,9 +26,16 @@ export const createInitCommand = (core: Core): Command => {
                 throw new Error('template not found');
             }
 
-            const newEnv: Environment = await core.initTemplate(template, {
-                test: 'test',
-            }, inputs.target);
+            const reverse: Reverse = Reverse.create();
+            const replaces: Record<string, string> | undefined = template.config.replacements;
+
+            if (replaces) {
+                for (const replace of keys(replaces)) {
+                    replaces[replace] = await reverse.question(replace);
+                }
+            }
+
+            const newEnv: Environment = await core.initTemplate(template, replaces || {}, inputs.target);
             console.log(newEnv);
         });
 };
