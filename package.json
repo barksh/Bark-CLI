@@ -28,7 +28,7 @@
     "@barksh/config": "^1.0.0",
     "@barksh/core": "^1.2.0",
     "@sudoo/bark": "^2.5.1",
-    "@sudoo/coco": "^1.7.0"
+    "@sudoo/coco": "^1.7.1"
   },
   "devDependencies": {
     "@sudoo/io": "^1.5.0",
