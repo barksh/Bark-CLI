@@ -27,10 +27,10 @@
     "@sudoo/io" "^0.1.0"
     connor "^2.4.0"
 
-"@barksh/core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@barksh/core/-/core-1.2.0.tgz#0d46017ef5f34c0384bc78073c00cef1681b8f52"
-  integrity sha512-4MW4Y/fOq5iAJQqbY5N4zCssxZ/jNKNddg+7o6HyYa+TZMPNpbpZRl2Bk4a8x3MDqyjVBgBE52KAoj8es+g7lA==
+"@barksh/core@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@barksh/core/-/core-1.2.1.tgz#93c27b7ad23357037d120ab83e6437b9ad4e70f4"
+  integrity sha512-nf3ZTMQQIy8zft508ZpdmuHEvreTbLkXEUk9EyESH/DrSVmdQ6drixo6h3bBfm3PlmoUpz37fKhEh5m77ZveJQ==
   dependencies:
     "@sudoo/bark" "^2.5.1"
     "@sudoo/io" "^1.5.0"
