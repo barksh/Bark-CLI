@@ -20,3 +20,16 @@ export const createInstallCommand = (core: Core): Command => {
             await replaceConfig(newEnvironment);
         });
 };
+
+export const createTemplateCommands = (core: Core): Command[] => {
+
+    return [
+        Command.multiple('template', 'remove')
+            .argument(Argument.create('name'))
+            .then(async (inputs: Record<string, string>) => {
+
+                const newEnvironment: Environment = await core.installFromSource(inputs.template);
+                await replaceConfig(newEnvironment);
+            }),
+    ];
+};
