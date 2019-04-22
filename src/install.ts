@@ -25,10 +25,10 @@ export const createTemplateCommands = (core: Core): Command[] => {
 
     return [
         Command.multiple('template', 'remove')
-            .argument(Argument.create('name'))
+            .argument(Argument.create('query'))
             .then(async (inputs: Record<string, string>) => {
 
-                const newEnvironment: Environment = await core.installFromSource(inputs.template);
+                const newEnvironment: Environment = await core.removeTemplate(inputs.query);
                 await replaceConfig(newEnvironment);
             }),
     ];

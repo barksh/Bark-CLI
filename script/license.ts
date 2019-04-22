@@ -8,6 +8,7 @@ import * as Fs from 'fs';
 import * as Path from 'path';
 
 const appPath: string = Path.join(__dirname, '..', 'app');
+const binPath: string = Path.join(__dirname, '..', 'bin');
 const licensePath: string = Path.join(__dirname, '..', 'LICENSE');
 const packagePath: string = Path.join(__dirname, '..', 'package.json');
 
@@ -18,7 +19,7 @@ const parent: any = JSON.parse(Fs.readFileSync(packagePath, 'utf8'));
 const appPackage: any = {
     name: parent.name,
     bin: {
-        bark: 'index.js',
+        bark: 'bark',
     },
     version: parent.version,
     description: parent.description,
@@ -31,3 +32,4 @@ const appPackage: any = {
     dependencies: parent.dependencies,
 };
 Fs.writeFileSync(Path.join(appPath, 'package.json'), JSON.stringify(appPackage, null, 2), 'utf8');
+Fs.copyFileSync(Path.join(binPath, 'bark'), Path.join(appPath, 'bark'));

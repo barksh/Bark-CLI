@@ -9,7 +9,7 @@ import { Coco, createInfoCommand } from "@sudoo/coco";
 import { CORE_EVENT } from "@sudoo/coco/event/declare";
 import { createPrintCommands, getEnvironment } from "./environment";
 import { createInitCommand } from "./init";
-import { createInstallCommand } from "./install";
+import { createInstallCommand, createTemplateCommands } from "./install";
 import { createSourceCommands } from "./source";
 import { createUpdateCommand } from "./update";
 
@@ -26,6 +26,7 @@ export const BarkCli = async (args: string[]): Promise<void> => {
 
         coco.command(createInitCommand(core));
         coco.command(createInstallCommand(core));
+        coco.commands(createTemplateCommands(core));
         coco.commands(createSourceCommands(core));
         coco.command(createUpdateCommand(core));
         coco.command(createInfoCommand('help', coco, console.log));

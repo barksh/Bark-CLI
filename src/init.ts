@@ -18,8 +18,6 @@ export const createInitCommand = (core: Core): Command => {
             readonly target: string;
         }) => {
 
-            console.log(inputs.template, inputs.target);
-
             const template: Template | null = await core.attemptFindTemplate(inputs.template);
 
             if (!template) {
@@ -36,6 +34,5 @@ export const createInitCommand = (core: Core): Command => {
             }
 
             const newEnv: Environment = await core.initTemplate(template, replaces || {}, inputs.target);
-            console.log(newEnv);
         });
 };
