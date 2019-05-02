@@ -43,9 +43,9 @@
   integrity sha512-HTjzCNHqE6WFp9S4dhmAtWS7RE0UTV90EcnR6LM7X+SXCIjkBC0JhNhss8nptiT2sDTs76rRV4SCXs6QNExooQ==
 
 "@sudoo/coco@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@sudoo/coco/-/coco-1.7.1.tgz#17290d85e6175523fa7c92a52b968c185a3df368"
-  integrity sha512-NVLSSkmVm0u459vIgPh7+1nYcIFVjfVAgcjt95V5RHFjKClOT6yhGGyCTjMF4KVKtPeYxo6l9kNWjaCWXId8WA==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@sudoo/coco/-/coco-1.8.0.tgz#19ac0b67b85da51b9786fc65f9d04404613e605d"
+  integrity sha512-Rhkeydknd0/tGya/0yzQSsCoAvR1Yy5e02RXxHadjDam7lyUxw0fhdMwAiTu16EEnNejKJQqW8Tha6Qt1yPrcA==
   dependencies:
     "@sudoo/bark" "^2.5.1"
     connor "^2.4.0"
